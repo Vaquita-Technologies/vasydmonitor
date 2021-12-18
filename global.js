@@ -18,15 +18,26 @@ const telemetryMapping = {
     "current": "DissolvedSolidsTotal",
     "batterylevel": "BatteryLevel"
 }
+// const telemetryColorMapping = {
+//     "temperature": '#66a3ff',
+//     "ph": "orange",
+//     "oxygendissolved": "green",
+//     "electricalconductivity": "red",
+//     "bga": "white",
+//     "turbidity": "teal",
+//     "current": "white",
+//     "batterylevel": "yellow"
+// }
+
 const telemetryColorMapping = {
-    "temperature": '#66a3ff',
-    "ph": "orange",
-    "oxygendissolved": "green",
-    "electricalconductivity": "red",
-    "bga": "white",
-    "turbidity": "teal",
-    "current": "white",
-    "batterylevel": "yellow"
+    "temperature": '#F5AD45',
+    "ph": "#F5AD45",
+    "oxygendissolved": "#F5AD45",
+    "electricalconductivity": "#F5AD45",
+    "bga": "#F5AD45",
+    "turbidity": "#F5AD45",
+    "current": "#F5AD45",
+    "batterylevel": "#F5AD45"
 }
 
 

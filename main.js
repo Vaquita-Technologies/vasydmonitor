@@ -78,7 +78,7 @@ function updateTelemetry(){
             $(".telemetrycontainer").css("cssText", "display:none;");
             $(".lastlogcontainer").css("cssText", "display:none;");
 
-            $('#sp_statid').html("Station ID <span class='stationidcontainer badge black-text' style='background-color:#F5AD45'>"+localStorage.stationid+"</span>");
+            $('#sp_statid').html("Station ID <span class='stationidcontainer badge black-text' style='background-color:#F5AD45'>"+"va-17"+"</span>");
 
             var res = JSON.parse(data);
             if(res.length==0){
