@@ -94,7 +94,15 @@ function updateTelemetry(){
             $('#val_param3').html(GetTelemetryValue(res[0],localStorage.param3));
             $('#val_param4').html(GetTelemetryValue(res[0],localStorage.param4));
             $('#val_param5').html(GetTelemetryValue(res[0],localStorage.param5));
-            $('#val_param6').html(GetTelemetryValue(res[0],localStorage.param6));            
+            $('#val_param6').html(GetTelemetryValue(res[0],localStorage.param6));     
+            
+            
+            $('#unit_param1').html(unitMapping[localStorage.param1]);
+            $('#unit_param2').html(unitMapping[localStorage.param2]);
+            $('#unit_param3').html(unitMapping[localStorage.param3]);
+            $('#unit_param4').html(unitMapping[localStorage.param4]);
+            $('#unit_param5').html(unitMapping[localStorage.param5]);
+            $('#unit_param6').html(unitMapping[localStorage.param6]);
 
             
             var blevel =res[0].BatteryLevel;

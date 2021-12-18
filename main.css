@@ -85,6 +85,16 @@ body {
     padding-bottom: 10px;    
     color:#F5AD45;
 }
+.telemetryUnitvalue{
+
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;   
+    font-weight: normal;
+    padding-bottom: 10px;    
+    color:#F5AD45;
+}
 .telemetryvalue{
     text-align: center;
     margin-top: 5px;

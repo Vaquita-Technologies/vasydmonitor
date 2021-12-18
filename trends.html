@@ -24,10 +24,8 @@
                 localStorage.selectedparam = "batterylevel";
             if (!localStorage.stationid)
                 localStorage.stationid = 10;
-            var param = telemetryMapping[localStorage.selectedparam];        
-            console.log(param);   
-            var paramheader = nameMapping[param.toLowerCase()];
-            console.log(paramheader);
+            var param = telemetryMapping[localStorage.selectedparam];              
+            var paramheader = nameMapping[param.toLowerCase()]+"   ["+unitMapping[param.toLowerCase()]+"]";            
             $('#paramHeader').html(paramheader);
             var url = "https://europe-west3-vaquita-technologies.cloudfunctions.net/veberodpilottelemetry?stationid=" + localStorage.stationid + "&maxlimit=1000&param=" + param;            
             $.ajax({

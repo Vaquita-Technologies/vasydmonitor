@@ -40,6 +40,17 @@ const telemetryColorMapping = {
     "batterylevel": "#F5AD45"
 }
 
+const unitMapping = {
+    "temperature": "°C",
+    "ph": "pH",
+    "oxygendissolved": "mg/L",
+    "electricalconductivity": "mS/cm",
+    "bga": "",
+    "turbidity": "NTU",
+    "current": "",
+    "batterylevel": "%"
+}
+
 
 function GetTelemetryValue(res, param) {
     switch (param) {
