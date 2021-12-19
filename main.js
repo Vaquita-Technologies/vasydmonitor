@@ -1,7 +1,18 @@
 $(document).ready(function () {   
+    
+    localStorage.stationid = 19;
 
     if (!localStorage.stationid)
-        localStorage.stationid = 17;
+        localStorage.stationid = 19;
+
+        localStorage.param0 = "batterylevel";
+        localStorage.param1 = "temperature";
+        localStorage.param2 = "ph";
+        localStorage.param3 = "electricalconductivity";
+        localStorage.param4 = "turbidity";
+        localStorage.param5 = "oxygendissolved";
+        localStorage.param6 = "bga";
+
         if (!localStorage.param0)
         localStorage.param0 = "batterylevel";
     if (!localStorage.param1)
@@ -78,7 +89,7 @@ function updateTelemetry(){
             $(".telemetrycontainer").css("cssText", "display:none;");
             $(".lastlogcontainer").css("cssText", "display:none;");
 
-            $('#sp_statid').html("Station ID <span class='stationidcontainer badge black-text' style='background-color:#F5AD45'>"+"va-17"+"</span>");
+            $('#sp_statid').html("Station ID <span class='stationidcontainer badge black-text' style='background-color:#F5AD45'>"+"va-19"+"</span>");
 
             var res = JSON.parse(data);
             if(res.length==0){

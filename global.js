@@ -2,7 +2,7 @@ const nameMapping = {
     "temperature": "Temperature",
     "ph": "pH",
     "oxygendissolved": "Oxygen Dissolved",
-    "electricalconductivity": "Electric Conductivity",
+    "electricalconductivity": "Elec. Cond",
     "bga": "Blue Green Algae",
     "turbidity": "Turbidity",
     "current": "Current",
