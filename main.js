@@ -27,13 +27,15 @@ $(document).ready(function () {
         localStorage.param5 = "oxygendissolved";
     if (!localStorage.param6)
         localStorage.param6 = "bga";
+    
+    var chartText ="<i class='material-icons tooltipped right' data-position='bottom' data-tooltip='Click to see trends!' style='font-size: 20px;margin-right:5px;margin-top:2px;color: #F5AD45;'>insert_chart</i>";
 
-    $("#lb_param1").html(nameMapping[localStorage.param1]);
-    $("#lb_param2").html(nameMapping[localStorage.param2]);
-    $("#lb_param3").html(nameMapping[localStorage.param3]);
-    $("#lb_param4").html(nameMapping[localStorage.param4]);
-    $("#lb_param5").html(nameMapping[localStorage.param5]);
-    $("#lb_param6").html(nameMapping[localStorage.param6]);
+    $("#lb_param1").html(nameMapping[localStorage.param1]+chartText);
+    $("#lb_param2").html(nameMapping[localStorage.param2]+chartText);
+    $("#lb_param3").html(nameMapping[localStorage.param3]+chartText);
+    $("#lb_param4").html(nameMapping[localStorage.param4]+chartText);
+    $("#lb_param5").html(nameMapping[localStorage.param5]+chartText);
+    $("#lb_param6").html(nameMapping[localStorage.param6]+chartText);
 
     // document.getElementById("span_resetall").addEventListener("click", () => {
     //     localStorage.clear();
@@ -76,6 +78,9 @@ $(document).ready(function () {
     // $(".batterycontainer").css("cssText", "display:block;");
     // $(".telemetrycontainer").css("cssText", "display:block;");
     // $(".lastlogcontainer").css("cssText", "display:block;");
+
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
 
 });
 
