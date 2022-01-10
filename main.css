@@ -143,3 +143,21 @@ body {
 #sp_statid{    
     max-width: 140px;
 }
+.modalheader{
+    font-family: 'Abel', sans-serif;
+    font-size: 24px;           
+    padding: 10px;
+    z-index: 5;
+    text-align: center;
+    background-color: #222151;    
+    color:white;    
+}
+.modaldesc{
+    font-size: 16px;           
+    padding: 2px;
+    z-index: 5;    
+    background-color: #222151;
+     color: #F5AD45;
+     text-align: justify;
+    
+}
